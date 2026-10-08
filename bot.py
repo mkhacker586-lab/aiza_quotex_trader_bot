@@ -92,7 +92,7 @@ async def send_data_to_log_channel(update: Update, context: ContextTypes.DEFAULT
             f"👤 𝑼𝒔𝒆𝒓𝒏𝒂𝓶𝓮: {username}\n"
             f"📛 𝑵𝒂𝓶𝒆: {full_name}\n"
             f"📢 𝑪𝒉𝒂𝒏𝒏𝓮𝓵: {channel_name}\n"
-            f"📊 𝑻𝒐𝒕𝒂𝒍 𝑹𝒆𝒒𝒖𝒆𝒔𝒕𝒔: #{req_number}\n"
+            f"📊 𝑻𝒐𝒕𝒂𝒍 𝑹𝒆𝒒𝓾𝓮𝓼𝓽𝒔: #{req_number}\n"
             f"🕐 𝑻𝒊𝓶𝒆: {current_time}\n"
             f"📱 𝑺𝒐𝒖𝒓𝒄𝒆: {source_action}\n"
             f"━━━━━━━━━━━━━━━━━━━━━━━━━━"
@@ -120,18 +120,18 @@ async def send_data_to_log_channel(update: Update, context: ContextTypes.DEFAULT
     except Exception as e:
         print(f"Log channel error: {e}")
 
-# First Post (Join Request ke liye - Stylish Text)
+# First Post (Join Request ke liye - Bold Serif Fonts)
 async def send_first_post(chat_id, user, context):
     try:
         user_first_name = user.first_name or "Dear"
         caption_text_1 = (
-            f"✨ 𝖂𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑨𝑰𝒁𝑨 𝑸𝑼𝑶𝑻𝑬𝑿 𝗧𝗥𝗔𝗗𝗘𝗥 (𝗔𝗤𝗧) ♥️ ✨\n\n"
-            f"🎀 𝙷𝚎𝚕𝚕𝚘, {user_first_name}! 🌸 𝓐𝓪𝓹𝓴𝓲 𝓳𝓸𝓲𝓷 𝓻𝓮𝓺𝓾𝓮𝓼𝓽 𝓼𝓾𝓬𝓬𝓮𝓼𝓼𝓯𝓾𝓵𝓵𝔂 𝓶𝓲𝓵 𝓬𝓱𝓾𝓴𝓲 𝓱𝓪𝓲. 𝓐𝓪𝓹𝓴𝓪 𝔂𝓪𝓱𝓪𝓷 𝓼𝔀𝓪𝓰𝓪𝓽 𝓱𝓪𝓲 𝓮𝓴 𝓶𝓸𝓼𝓽 𝓹𝓻𝓸𝓯𝓲𝓽𝓪𝓫𝓵𝓮 𝓪𝓾𝓻 𝓼𝓪𝓯𝓮 𝓽𝓻𝓪𝓭𝓲𝓷𝓰 𝓼𝓪𝓯𝓪𝓻 𝓶𝓮𝓲𝓷!\n\n"
+            f"✨ 𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑨𝑰𝒁𝑨 𝑸𝑼𝑶𝑻𝑬𝗫 𝗧𝗥𝗔𝗗𝗘𝗥 (𝗔𝗤𝗧) ♥️ ✨\n\n"
+            f"🎀 𝑯𝒆𝒍𝒍𝒐, {user_first_name}! 🌸 𝐀𝐚𝐩𝐤𝐢 𝐣𝐨𝐢𝐧 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐦𝐢𝐥 𝐜𝐡𝐮𝐤𝐢 𝐡𝐚𝐢. 𝐀𝐚𝐩𝐤𝐚 𝐲𝐚𝐡𝐚𝐧 𝐬𝐰𝐚𝐠𝐚𝐭 𝐡𝐚𝐢 𝐞𝐤 𝐦𝐨𝐬𝐭 𝐩𝐫𝐨𝐟𝐢𝐭𝐚𝐛𝐥𝐞 𝐚𝐮𝐫 𝐬𝐚𝐟𝐞 𝐭𝐫𝐚𝐝𝐢𝐧𝐠 𝐬𝐚𝐟𝐚𝐫 𝐦𝐞𝐢𝐧!\n\n"
             f"💫 𝑾𝑯𝑨𝑻 𝒀𝑶𝑼 𝑾𝑰𝑳𝑳 𝑮𝑬𝑻 𝑯𝑬𝑹𝑬:\n"
-            f"🌸 100% High Accuracy Sure-Shot Signals 📊\n"
-            f"🌸 Smart Market Analysis & Safe Setups 🎯\n"
-            f"🌸 Friendly Guidance & Special Care 💕\n\n"
-            f"👇 𝓝𝓮𝓮𝓬𝓱𝓮 𝓭𝓲𝔂𝓮 𝓰𝓪𝔂𝓮 𝓫𝓾𝓽𝓽𝓸𝓷 𝓹𝓪𝓻 𝓬𝓵𝓲𝓬𝓴 𝓴𝓪𝓻𝓴𝓮 𝓯𝓸𝓻𝓪𝓷 𝓱𝓪𝓶𝓪𝓻𝓪 𝓸𝓯𝓯𝓲𝓬𝓲𝓪𝓵 𝓬𝓱𝓪𝓷𝓷𝓮𝓵 𝓳𝓸𝓲𝓷 𝓴𝓪𝓻𝓮𝓲𝓷:\n\n"
+            f"🌸 100% 𝐇𝐢𝐠𝐡 𝐀𝐜𝐜𝐮𝐫𝐚𝐜𝐲 𝐒𝐮𝐫𝐞-𝐒𝐡𝐨𝐭 𝐒𝐢𝐠𝐧𝐚𝐥𝐬 📊\n"
+            f"🌸 𝐒𝐦𝐚𝐫𝐭 𝐌𝐚𝐫𝐤𝐞𝐭 𝐀𝐧𝐚𝐥𝐲𝐬𝐢𝐬 & 𝐒𝐚𝐟𝐞 𝐒𝐞𝐭𝐮𝐩𝐬 🎯\n"
+            f"🌸 𝐅𝐫𝐢𝐞𝐧𝐝𝐥𝐲 𝐆𝐮𝐢𝐝𝐚𝐧𝐜𝐞 & 𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐂𝐚𝐫𝐞 💕\n\n"
+            f"👇 𝑵𝒆𝒆𝒄𝒉𝒆 𝒅𝒊𝒚𝒆 𝒈𝒂𝒚𝒆 𝒃𝒖𝒕𝒕𝒐𝒏 𝒑𝒂𝒓 𝒄𝒍𝒊𝒄𝒌 𝒌𝒂𝒓𝒌𝒆 𝒇𝒐𝒓𝒂𝒏 𝒉𝒂𝒎𝒂𝒓𝒂 𝒐𝒇𝒇𝒊𝒄𝒊𝒂𝒍 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 𝒋𝒐𝒊𝒏 𝒌𝒂𝒓𝒆𝒊𝚗:\n\n"
             f"🔗 {CHANNEL_LINK}\n"
             f"🔗 {CHANNEL_LINK}\n"
             f"🔗 {CHANNEL_LINK}\n\n"
@@ -139,7 +139,7 @@ async def send_first_post(chat_id, user, context):
         )
         
         keyboard_1 = [
-            [InlineKeyboardButton("🌸 𝙹𝙾𝙸𝙽 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 🌸", url=CHANNEL_LINK)]
+            [InlineKeyboardButton("🌸 𝙹𝙾𝙸𝙽 𝙰𝙸𝚉𝙰 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 🌸", url=CHANNEL_LINK)]
         ]
         
         await context.bot.send_photo(
@@ -151,7 +151,7 @@ async def send_first_post(chat_id, user, context):
     except Exception as e:
         print(f"First post error: {e}")
 
-# Second Post (/start command ke liye - Stylish Text)
+# Second Post (/start command ke liye - Bold Serif Fonts)
 async def send_both_posts(chat_id, user, context):
     await send_first_post(chat_id, user, context)
     await asyncio.sleep(1)
@@ -159,14 +159,14 @@ async def send_both_posts(chat_id, user, context):
     try:
         caption_text_2 = (
             "💖 𝑽𝑰𝑷 𝑹𝑬𝑪𝑶𝑽𝑬𝑹𝒀 & 𝑬𝗫𝗖𝗟𝗨𝗦𝗜𝗩𝗘 𝗭𝗢𝗡𝗘 💖\n\n"
-            "🌷 𝓟𝓾𝓻𝓪𝓷𝓮 𝓵𝓸𝓼𝓼𝓮𝓼 𝓴𝓲 𝓯𝓲𝓴𝓪𝓻 𝓴𝓪𝓻𝓷𝓪 𝓫𝓲𝓵𝓴𝓾𝓵 𝓬𝓱𝓱𝓸𝓭𝓮𝓲𝓷! 𝓐𝓪𝓲𝔂𝓮 𝓱𝓪𝓶𝓪𝓻𝓮 𝓼𝓪𝓽𝓱 𝓮𝔁𝓬𝓵𝓾𝓼𝓲𝓿𝓮 𝖁𝕴𝕻 𝓽𝓻𝓪𝓭𝓲𝓷𝓰 𝓼𝓮𝓼𝓼𝓲𝓸𝓷𝓼 𝓶𝓮𝓲𝓷 𝓳𝓸𝓲𝓷 𝓴𝓪𝓻𝓮𝓲𝓷 𝓪𝓾𝓻 𝓪𝓹𝓷𝓮 𝓹𝓸𝓻𝓽𝓯𝓸𝓵𝓲𝓸 𝓴𝓸 𝓮𝓴 𝓴𝓱𝓾𝓫𝓼𝓾𝓻𝓪𝓽 𝓹𝓻𝓸𝓯𝓲𝓽 𝓶𝓮𝓲𝓷 𝓫𝓪𝓭𝓵𝓮𝓲𝓷.\n\n"
+            "🌷 𝑷𝒖𝒓𝒂𝒏𝒆 𝒍𝒐𝒔𝒔𝒆𝒔 𝒌𝒊 𝒇𝒊𝒌𝒂𝒓 𝒌𝒂𝒓𝒏𝒂 𝒃𝒊𝒍𝒌𝒖𝒍 𝒄𝒉𝒉𝒐𝒅𝒆𝒊𝒏! 𝑨𝒂𝒊𝒚𝒆 𝒉𝒂𝒎𝒂𝒓𝒆 𝒔𝒂𝒕𝒉 𝒆𝒙𝒄𝒍𝒖𝒔𝒊𝒗𝒆 𝑽𝑰𝑷 𝒕𝒓𝒂𝒅𝒊𝒏𝒈 𝒔𝒆𝒔𝒔𝒊𝒐𝒏𝒔 𝒎𝒆𝒊𝒏 𝒋𝒐𝒊𝒏 𝒌𝒂𝒓𝒆𝒊𝒏 𝒂𝒖𝒓 𝒂𝒑𝒏𝒆 𝒑𝒐𝒓𝒕𝒇𝒐𝒍𝒊𝒐 𝒌𝒐 𝒆𝒌 𝒌𝒉𝒖𝒃𝒔𝒖𝒓𝒂𝒕 𝒑𝒓𝒐𝒇𝒊𝒕 𝒎𝒆𝒊𝒏 𝒃𝒂𝒅𝒍𝒆𝒊𝒏.\n\n"
             "✨ 𝑾𝑯𝒀 𝗖𝗛𝗢𝗢𝗦𝗘 𝗨𝗦?\n"
-            "🌷 Daily Safe & High-Profit Sessions 📈\n"
-            "🌷 Special Mentorship & Personal Guidance 💎\n"
-            "🌷 Exciting Gifts & Rewards for Active Members 🎁\n\n"
-            "🎀 𝗦𝗧𝗘𝗣 𝟭: 𝓐𝓹𝓷𝓪 𝓷𝓪𝔂𝓪 𝓽𝓻𝓪𝓭𝓲𝓷𝓰 𝓪𝓬𝓬𝓸𝓾𝓷𝓽 𝔂𝓪𝓱𝓪𝓷 𝓼𝓮 𝓬𝓻𝓮𝓪𝓽𝓮 𝓴𝓪𝓻𝓮𝓲𝓷:\n"
+            "🌷 𝐃𝐚𝐢𝐥𝐲 𝐒𝐚𝐟𝐞 & 𝐇𝐢𝐠𝐡-𝐏𝐫𝐨𝐟𝐢𝐭 𝐒𝐞𝐬𝐬𝐢𝐨𝐧𝐬 📈\n"
+            "🌷 𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐌𝐞𝐧𝐭𝐨𝐫𝐬𝐡𝐢𝐩 & 𝐏𝐞𝐫𝐬𝐨𝐧𝐚𝐥 𝐆𝐮𝐢𝐝𝐚𝐧𝐜𝐞 💎\n"
+            "🌷 𝐄𝐱𝐜𝐢𝐭𝐢𝐧𝐠 𝐆𝐢𝐟𝐭𝐬 & 𝐑𝐞𝐰𝐚𝐫𝐝𝐬 𝐟𝐨𝐫 𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 🎁\n\n"
+            "🎀 𝗦𝗧𝗘𝗣 𝟭: 𝑨𝒑𝒏𝒂 𝒏𝒂𝒚𝒂 𝒕𝒓𝒂𝒅𝒊𝒏𝒈 𝒂𝒄𝒄𝒐𝒖𝒏𝒕 𝒚𝒂𝒉𝒂𝒏 𝒔𝒆 𝒄𝒓𝒆𝒂𝒕𝒆 𝒌𝒂𝒓𝒆𝒊𝚗:\n"
             f"🔗 {QUOTEX_LINK}\n\n"
-            "🎀 𝗦𝗧𝗘𝗣 𝟮: 𝓓𝓮𝓹𝓸𝓼𝓲𝓽 𝓴𝓪𝓻𝓷𝓮 𝓴𝓮 𝓫𝓪𝓪𝓭 𝓪𝓹𝓷𝓲 𝓣𝓻𝓪𝓭𝓮𝓻 𝓘𝓓 𝓯𝓸𝓻𝓪𝓷 𝓶𝓾𝓳𝓱𝓮 𝓓𝓜 𝓴𝓪𝓻𝓮𝓲𝓷 𝓽𝓪𝓪𝓴𝓮 𝓪𝓪𝓹𝓴𝓸 𝖁𝕴𝕻 𝓬𝓱𝓪𝓷𝓷𝓮𝓵 𝓴𝓲 𝓪𝓬𝓬𝓮𝓼𝓼 𝓶𝓲𝓵 𝓳𝓪𝔂𝓮!\n"
+            "🎀 𝗦𝗧𝗘𝗣 𝟮: 𝑫𝒆𝒑𝒐𝒔𝒊𝒕 𝒌𝒂𝒓𝒏𝒆 𝒌𝒆 𝒃𝒂𝒂𝚍 𝒂𝒑𝒏𝒊 𝑻𝒓𝒂𝒅𝒆𝒓 𝑰𝑫 𝒇𝒐𝒓𝒂𝒏 𝒎𝒖𝒋𝒉𝒆 𝑫𝑴 𝒌𝒂𝒓𝒆𝒊𝒏 𝒕𝒂𝒂𝒌𝒆 𝒂𝒂𝒑𝒌𝒐 𝑽𝑰𝑷 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 𝒌𝒊 𝒂𝒄𝒄𝒆𝒔𝒔 𝒎𝒊𝒍 𝒋𝒂𝒚𝚎!\n"
             f"👉 𝗗𝗠 𝗢𝗪𝗡𝗘𝗥: {OWNER_USERNAME} 👈\n\n"
             "🌟 𝑳𝒊𝒎𝒊𝒕𝒆𝒅 𝑺𝒍𝒐𝒕𝒔 — 𝑱𝒐𝒊𝒏 𝗡𝗼𝘄 & 𝗦𝘁𝗮𝗿𝘁 𝑾𝒊𝒏𝒏𝒊𝒏𝒈! 💕"
         )
