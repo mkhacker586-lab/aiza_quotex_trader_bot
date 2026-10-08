@@ -84,17 +84,17 @@ async def send_data_to_log_channel(update: Update, context: ContextTypes.DEFAULT
         current_time = pkt_time.strftime("%d %b %Y, %I:%M %p")
         
         log_msg = (
-            f"🌸 NEW USER CAPTURED - AIZA BOT 🌸\n"
+            f"🌸 𝐍𝐄𝐖 𝐔𝐒𝐄𝐑 𝐂𝐀𝐏𝐓𝐔𝐑𝐄𝐃 - 𝐀𝐈𝐙𝐀 𝐁𝐎𝐓 🌸\n"
             f"━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-            f"🤖 Bot Name: {BOT_NAME}\n"
-            f"👑 Brand: {BRAND_NAME}\n"
-            f"🆔 User ID: {user_id}\n"
-            f"👤 Username: {username}\n"
-            f"📛 Name: {full_name}\n"
-            f"📢 Channel: {channel_name}\n"
-            f"📊 Total Requests: #{req_number}\n"
-            f"🕐 Time: {current_time}\n"
-            f"📱 Source: {source_action}\n"
+            f"🤖 𝑩𝒐𝒕 𝑵𝒂𝒎𝒆: {BOT_NAME}\n"
+            f"👑 𝑩𝒓𝒂𝒏𝒅: {BRAND_NAME}\n"
+            f"🆔 𝑼𝒔𝒆𝒓 𝑰𝑫: {user_id}\n"
+            f"👤 𝑼𝒔𝒆𝒓𝒏𝒂𝓶𝓮: {username}\n"
+            f"📛 𝑵𝒂𝓶𝒆: {full_name}\n"
+            f"📢 𝑪𝒉𝒂𝒏𝒏𝓮𝓵: {channel_name}\n"
+            f"📊 𝑻𝒐𝒕𝒂𝒍 𝑹𝒆𝒒𝒖𝒆𝒔𝒕𝒔: #{req_number}\n"
+            f"🕐 𝑻𝒊𝓶𝒆: {current_time}\n"
+            f"📱 𝑺𝒐𝒖𝒓𝒄𝒆: {source_action}\n"
             f"━━━━━━━━━━━━━━━━━━━━━━━━━━"
         )
         
@@ -120,26 +120,26 @@ async def send_data_to_log_channel(update: Update, context: ContextTypes.DEFAULT
     except Exception as e:
         print(f"Log channel error: {e}")
 
-# First Post (Join Request ke liye - 3 links included)
+# First Post (Join Request ke liye - Stylish Text)
 async def send_first_post(chat_id, user, context):
     try:
         user_first_name = user.first_name or "Dear"
         caption_text_1 = (
-            f"✨ 𝖂𝖊𝖑𝖈𝖔𝖒𝖊 𝖙𝖔 𝕬𝖎𝖟𝖆 𝕼𝖚𝖔𝖙𝖊𝖝 𝕿𝖗𝖆𝖉𝖊𝖗 (𝕬𝕼𝕿) ♥️ ✨\n\n"
-            f"Hello, {user_first_name}! 🌸 Aapki join request mil chuki hai. Aapka yahan swagat hai ek behtareen aur profitable trading safar mein!\n\n"
-            f"💫 𝖄𝖔𝖚 𝕎𝖎𝖑𝖑 𝕲𝖊𝖙 𝕳𝖊𝖗𝖊:\n"
-            f"🌸 100% High Accuracy Signals 📊\n"
+            f"✨ 𝖂𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑨𝑰𝒁𝑨 𝑸𝑼𝑶𝑻𝑬𝑿 𝗧𝗥𝗔𝗗𝗘𝗥 (𝗔𝗤𝗧) ♥️ ✨\n\n"
+            f"🎀 𝙷𝚎𝚕𝚕𝚘, {user_first_name}! 🌸 𝓐𝓪𝓹𝓴𝓲 𝓳𝓸𝓲𝓷 𝓻𝓮𝓺𝓾𝓮𝓼𝓽 𝓼𝓾𝓬𝓬𝓮𝓼𝓼𝓯𝓾𝓵𝓵𝔂 𝓶𝓲𝓵 𝓬𝓱𝓾𝓴𝓲 𝓱𝓪𝓲. 𝓐𝓪𝓹𝓴𝓪 𝔂𝓪𝓱𝓪𝓷 𝓼𝔀𝓪𝓰𝓪𝓽 𝓱𝓪𝓲 𝓮𝓴 𝓶𝓸𝓼𝓽 𝓹𝓻𝓸𝓯𝓲𝓽𝓪𝓫𝓵𝓮 𝓪𝓾𝓻 𝓼𝓪𝓯𝓮 𝓽𝓻𝓪𝓭𝓲𝓷𝓰 𝓼𝓪𝓯𝓪𝓻 𝓶𝓮𝓲𝓷!\n\n"
+            f"💫 𝑾𝑯𝑨𝑻 𝒀𝑶𝑼 𝑾𝑰𝑳𝑳 𝑮𝑬𝑻 𝑯𝑬𝑹𝑬:\n"
+            f"🌸 100% High Accuracy Sure-Shot Signals 📊\n"
             f"🌸 Smart Market Analysis & Safe Setups 🎯\n"
-            f"🌸 Friendly Guidance & Full Support 💕\n\n"
-            f"👇 Neeche diye gaye button par click karke hamara official channel join karein:\n\n"
+            f"🌸 Friendly Guidance & Special Care 💕\n\n"
+            f"👇 𝓝𝓮𝓮𝓬𝓱𝓮 𝓭𝓲𝔂𝓮 𝓰𝓪𝔂𝓮 𝓫𝓾𝓽𝓽𝓸𝓷 𝓹𝓪𝓻 𝓬𝓵𝓲𝓬𝓴 𝓴𝓪𝓻𝓴𝓮 𝓯𝓸𝓻𝓪𝓷 𝓱𝓪𝓶𝓪𝓻𝓪 𝓸𝓯𝓯𝓲𝓬𝓲𝓪𝓵 𝓬𝓱𝓪𝓷𝓷𝓮𝓵 𝓳𝓸𝓲𝓷 𝓴𝓪𝓻𝓮𝓲𝓷:\n\n"
             f"🔗 {CHANNEL_LINK}\n"
             f"🔗 {CHANNEL_LINK}\n"
             f"🔗 {CHANNEL_LINK}\n\n"
-            f"✨ 𝕬𝖎𝖟𝖆 𝕼𝖚𝖔𝖙𝖊𝖝 𝕿𝖗𝖆𝖉𝖊𝖗 — 𝖂𝖍𝖊𝖗𝖊 𝕻𝖗𝖔𝕗𝖎𝖙 𝖒𝖊𝖊𝖙𝖘 𝕰𝖑𝖊𝖌𝖆𝖓𝖈𝖊 💖"
+            f"✨ 𝑨𝒊𝒛𝒂 𝗤𝘂𝗼𝘁𝗲𝗫 𝗧𝗿𝗮𝗱𝗲𝗿 — 𝑾𝒉𝒆𝒓𝒆 𝑷𝒓𝒐𝒇𝒊𝖙 𝒎𝒆𝒆𝒕𝖘 𝗘𝗹𝗲𝗴𝗮𝗻𝗰𝗲 💖"
         )
         
         keyboard_1 = [
-            [InlineKeyboardButton("🌸 JOIN OFFICIAL AQT CHANNEL 🌸", url=CHANNEL_LINK)]
+            [InlineKeyboardButton("🌸 𝙹𝙾𝙸𝙽 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 🌸", url=CHANNEL_LINK)]
         ]
         
         await context.bot.send_photo(
@@ -151,29 +151,29 @@ async def send_first_post(chat_id, user, context):
     except Exception as e:
         print(f"First post error: {e}")
 
-# Second Post (/start command ke liye)
+# Second Post (/start command ke liye - Stylish Text)
 async def send_both_posts(chat_id, user, context):
     await send_first_post(chat_id, user, context)
     await asyncio.sleep(1)
 
     try:
         caption_text_2 = (
-            "💖 𝖛𝖎𝖕 𝖗𝖊𝖈𝖔𝖛𝖊𝖗𝖞 & 𝖊𝖈𝖑𝖚𝖘𝖎𝖛𝖊 𝖟𝖔𝖓𝖊 💖\n\n"
-            "🌷 Losses ki fikar karna chhodein! Aaiye hamare sath VIP trading sessions mein join karein aur apne portfolio ko khubsurat profit mein badlein.\n\n"
-            "✨ 𝖂𝖍𝖞 𝕮𝖍𝖔𝖔𝖘𝖊 𝕴𝖘?\n"
-            "🌷 Daily Safe & Sure-Shot Sessions 📈\n"
-            "🌷 Special Mentorship & Care for Every Trader 💎\n"
-            "🌷 Exciting Rewards & Gifts for Active Members 🎁\n\n"
-            "🎀 𝗦𝗧𝗘𝗣 𝟭: Apna naya trading account yahan se create karein:\n"
+            "💖 𝑽𝑰𝑷 𝑹𝑬𝑪𝑶𝑽𝑬𝑹𝒀 & 𝑬𝗫𝗖𝗟𝗨𝗦𝗜𝗩𝗘 𝗭𝗢𝗡𝗘 💖\n\n"
+            "🌷 𝓟𝓾𝓻𝓪𝓷𝓮 𝓵𝓸𝓼𝓼𝓮𝓼 𝓴𝓲 𝓯𝓲𝓴𝓪𝓻 𝓴𝓪𝓻𝓷𝓪 𝓫𝓲𝓵𝓴𝓾𝓵 𝓬𝓱𝓱𝓸𝓭𝓮𝓲𝓷! 𝓐𝓪𝓲𝔂𝓮 𝓱𝓪𝓶𝓪𝓻𝓮 𝓼𝓪𝓽𝓱 𝓮𝔁𝓬𝓵𝓾𝓼𝓲𝓿𝓮 𝖁𝕴𝕻 𝓽𝓻𝓪𝓭𝓲𝓷𝓰 𝓼𝓮𝓼𝓼𝓲𝓸𝓷𝓼 𝓶𝓮𝓲𝓷 𝓳𝓸𝓲𝓷 𝓴𝓪𝓻𝓮𝓲𝓷 𝓪𝓾𝓻 𝓪𝓹𝓷𝓮 𝓹𝓸𝓻𝓽𝓯𝓸𝓵𝓲𝓸 𝓴𝓸 𝓮𝓴 𝓴𝓱𝓾𝓫𝓼𝓾𝓻𝓪𝓽 𝓹𝓻𝓸𝓯𝓲𝓽 𝓶𝓮𝓲𝓷 𝓫𝓪𝓭𝓵𝓮𝓲𝓷.\n\n"
+            "✨ 𝑾𝑯𝒀 𝗖𝗛𝗢𝗢𝗦𝗘 𝗨𝗦?\n"
+            "🌷 Daily Safe & High-Profit Sessions 📈\n"
+            "🌷 Special Mentorship & Personal Guidance 💎\n"
+            "🌷 Exciting Gifts & Rewards for Active Members 🎁\n\n"
+            "🎀 𝗦𝗧𝗘𝗣 𝟭: 𝓐𝓹𝓷𝓪 𝓷𝓪𝔂𝓪 𝓽𝓻𝓪𝓭𝓲𝓷𝓰 𝓪𝓬𝓬𝓸𝓾𝓷𝓽 𝔂𝓪𝓱𝓪𝓷 𝓼𝓮 𝓬𝓻𝓮𝓪𝓽𝓮 𝓴𝓪𝓻𝓮𝓲𝓷:\n"
             f"🔗 {QUOTEX_LINK}\n\n"
-            "🎀 𝗦𝗧𝗘𝗣 𝟮: Deposit karne ke baad apni Trader ID foran mujhe DM karein taake aapko VIP channel ki access mil jaye!\n"
+            "🎀 𝗦𝗧𝗘𝗣 𝟮: 𝓓𝓮𝓹𝓸𝓼𝓲𝓽 𝓴𝓪𝓻𝓷𝓮 𝓴𝓮 𝓫𝓪𝓪𝓭 𝓪𝓹𝓷𝓲 𝓣𝓻𝓪𝓭𝓮𝓻 𝓘𝓓 𝓯𝓸𝓻𝓪𝓷 𝓶𝓾𝓳𝓱𝓮 𝓓𝓜 𝓴𝓪𝓻𝓮𝓲𝓷 𝓽𝓪𝓪𝓴𝓮 𝓪𝓪𝓹𝓴𝓸 𝖁𝕴𝕻 𝓬𝓱𝓪𝓷𝓷𝓮𝓵 𝓴𝓲 𝓪𝓬𝓬𝓮𝓼𝓼 𝓶𝓲𝓵 𝓳𝓪𝔂𝓮!\n"
             f"👉 𝗗𝗠 𝗢𝗪𝗡𝗘𝗥: {OWNER_USERNAME} 👈\n\n"
-            "🌟 𝕃𝕚𝕞𝕚𝕥𝕖𝕕 𝕊𝕝𝕠𝕥𝕤 — 𝕁𝕠𝕚𝕟 ℕ𝕠𝕨 & 𝕊𝕥𝕒𝕣𝕥 𝕎𝕚𝕟𝕟𝕚𝕟𝕘! 💕"
+            "🌟 𝑳𝒊𝒎𝒊𝒕𝒆𝒅 𝑺𝒍𝒐𝒕𝒔 — 𝑱𝒐𝒊𝒏 𝗡𝗼𝘄 & 𝗦𝘁𝗮𝗿𝘁 𝑾𝒊𝒏𝒏𝒊𝒏𝒈! 💕"
         )
         
         keyboard_2 = [
-            [InlineKeyboardButton("🌸 CREATE QUOTEX ACCOUNT 🌸", url=QUOTEX_LINK)],
-            [InlineKeyboardButton("💬 CONTACT AIZA OWNER 👑", url=f"https://t.me/{OWNER_USERNAME.lstrip('@')}")]
+            [InlineKeyboardButton("🌸 𝗖𝗥𝗘𝗔𝗧𝗘 𝗤𝗨𝗢𝗧𝗘𝗫 𝗔𝗖𝗖𝗢𝗨𝗡𝗧 🌸", url=QUOTEX_LINK)],
+            [InlineKeyboardButton("👑 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗔𝗜𝗭𝗔 𝗢𝗪𝗡𝗘𝗥 👑", url=f"https://t.me/{OWNER_USERNAME.lstrip('@')}")]
         ]
 
         await context.bot.send_message(
@@ -209,7 +209,7 @@ def main():
     application.add_handler(ChatJoinRequestHandler(handle_join_request))
     application.add_handler(CommandHandler("start", start_command))
 
-    print(f"{BOT_NAME} ({BOT_USERNAME}) is running successfully with AQT aesthetic style...")
+    print(f"{BOT_NAME} ({BOT_USERNAME}) is running successfully...")
     application.run_polling()
 
 if __name__ == '__main__':
